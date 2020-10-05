@@ -65,15 +65,15 @@ const RegistrationList = () => {
                     
                 </Nav>
             </div>
-            <section>
-            <div className="row">
+            <section className="row">
+            <div className="col-md-6">
             
             {
                 registrations.map(activity => {
                     return (
-                        <div className='row my-2' style={{width: '500px', border: '1px solid lightgray'}}>
+                        <div className='row my-2' style={{width: '450px', border: '1px solid lightgray'}}>
                             <div className='col-sm-5'>
-                                <img style={{ width: '200px', height: 'auto'}} className='ml-5 my-3' variant="top" src={activity.selectedImage} alt="" />
+                                <img style={{ width: '200px', height: 'auto'}} className='my-3' variant="top" src={activity.selectedImage} alt="" />
                             </div>                           
                             <div className='col-sm-4 offset-3  mt-3'>                           
                                 <h5>{activity.eventName}</h5>
